@@ -1,14 +1,16 @@
+package Repaso1;
+
 public class Empleado {
 
-    private String dni;
+    private int dni;
 
     private String nombre;
 
-    private float sueldo;
+    private int sueldo;
 
     Empleado(){}
 
-    Empleado(String dni, String nombre, float sueldo){
+    Empleado(int dni, String nombre, int sueldo){
 
         this.dni=dni;
         this.nombre=nombre;
@@ -16,11 +18,11 @@ public class Empleado {
 
     }
 
-    public String getDni() {
+    public int getDni() {
         return dni;
     }
 
-    public void setDni(String dni) {
+    public void setDni(int dni) {
         this.dni = dni;
     }
 
@@ -32,11 +34,11 @@ public class Empleado {
         this.nombre = nombre;
     }
 
-    public float getSueldo() {
+    public int getSueldo() {
         return sueldo;
     }
 
-    public void setSueldo(float sueldo) {
+    public void setSueldo(int sueldo) {
         this.sueldo = sueldo;
     }
 
