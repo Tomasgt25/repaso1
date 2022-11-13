@@ -22,7 +22,11 @@ public class Plantilla {
     //Mirado
     public void mostrarEmpleados(){
         for (Empleado empleado: plantilla) {
-            System.out.println(empleado);
+            if (empleado == null){
+                System.out.println("Vacante libre");
+            } else {
+                System.out.println(empleado);
+            }
         }
     }
 
