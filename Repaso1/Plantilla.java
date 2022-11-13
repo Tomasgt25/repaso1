@@ -28,15 +28,18 @@ public class Plantilla {
 
     //Mirado y no logrado
 
-    public void empleadoMasRico(String sueldoBuscado){
-        for (int i = 0; i < plantilla.length; i++) {
-            if (sueldoBuscado.equals(plantilla[i].getSueldo())) {
-
-            }
+    public Empleado empleadoMasRico(){
+        Empleado aux= new Empleado();
+        if (aux == null) {
+            aux = plantilla[0];
         }
 
+            for (int i = 0; i < plantilla.length; i++) {
+            if (aux.getSueldo()< plantilla[i].getSueldo()){
+                aux = plantilla[i];
+            }
+            }
 
+        return aux;
     }
-
-
 }

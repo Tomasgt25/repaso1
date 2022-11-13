@@ -25,6 +25,7 @@ public class Main {
 
 
         plantilla1.mostrarEmpleados();
+        System.out.println("El empleado más rico es: " + plantilla1.empleadoMasRico().getNombre());
 
     }
 }
